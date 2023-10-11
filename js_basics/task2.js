@@ -4,7 +4,7 @@
 
 import chalk from "chalk";
 
-let chalkTest = "Hello!"
+const chalkTest = "Hello!"
 
 console.log(chalk.blue(chalkTest));
 

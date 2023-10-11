@@ -7,11 +7,11 @@
 // 5-1 Створіть змінну radius і присвойте їй числове значення радіуса кола.
 // Обчисліть площу кола за формулою π * radius^2 і виведіть результат.
 
-let radius = 15;
+const radius = 15;
 
-let areaCalc = Math.PI * (radius * radius);
+const circleArea = Math.PI * Math.pow(radius,2);
 
-console.log(areaCalc);
+console.log(circleArea);
 
 // 5-2
 
@@ -23,9 +23,9 @@ const length = 10;
 
 const width = 7;
 
-const areaRecta = length * width;
+const rectangleArea = length * width;
 
-console.log(areaRecta);
+console.log(rectangleArea);
 
 //5-3
 
@@ -35,6 +35,6 @@ console.log(areaRecta);
 
 const height = 15;
 
-const cylinderVol = (Math.PI * (radius * radius)) * height;
+const cylinderVol = (Math.PI * Math.pow(radius,2)) * height;
 
 console.log(cylinderVol.toFixed(2));

@@ -9,8 +9,8 @@ const numberType = 10;
 
 const boolType = true;
 
-const zeroType = null;
+const nothingType = null;
 
 let undefType;
 
-console.log(stringType, numberType, boolType, zeroType, undefType);
+console.log(stringType, numberType, boolType, nothingType, undefType);

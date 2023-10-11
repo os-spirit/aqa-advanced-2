@@ -2,10 +2,12 @@
 
 // Створіть дві змінні, які містять імена двох осіб. Використовуючи конкатенацію рядків, створіть новий рядок, який містить вітання для обох осіб. Виведіть результат в консоль. Потім використайте шаблонний рядок для створення того ж вітання. Виведіть результат в консоль.
 
-let firstPerson = "Bob";
+const firstPerson = "Bob";
 
-let secondPerson = "Jack";
+const secondPerson = "Jack";
 
-const helloMessage = "Hello! " + firstPerson + " and " + secondPerson;
+// const helloMessage = "Hello! " + firstPerson + " and " + secondPerson;
 
-console.log(helloMessage);
+const backtickExpamle = `Hello! ${firstPerson} and ${secondPerson}`
+
+console.log(backtickExpamle);
