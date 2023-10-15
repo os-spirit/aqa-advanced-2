@@ -14,3 +14,17 @@ for (let i = 1; i <= 10; i++){
     
     console.log(result)
 }
+
+console.log("=============================== loop WHILE started ========================");
+
+let startingPoint = 0;
+
+while (startingPoint <= 9){
+
+    startingPoint++
+
+    let result = `${number} x ${startingPoint} = ${number * startingPoint}`
+
+    console.log(result)
+    
+}
