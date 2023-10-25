@@ -7,28 +7,28 @@
 
 
 // Declaration
-function rectangleArea(width, height) {
+function calculateRectangleArea(width, height) {
 
     const rectangleAreaResult = width * height;
-    console.log(rectangleAreaResult);
+    return rectangleAreaResult;
     
 }
 
-rectangleArea(5, 10);
+console.log(calculateRectangleArea(5, 10));
 
 // Expression
 
-const rectangleAreaExpress = function (width, height) {
+const calculateRectangleAreaExpress = function (width, height) {
     return width * height;
     
 }
 
-console.log(rectangleAreaExpress(5, 10));
+console.log(calculateRectangleAreaExpress(5, 10));
 
 //Arrow
 
-const rectangleAreaArrow = (width, height) => width * height;
+const calculateRectangleAreaArrow = (width, height) => width * height;
 
-console.log(rectangleAreaArrow(5,10));
+console.log(calculateRectangleAreaArrow(5,10));
 
  
