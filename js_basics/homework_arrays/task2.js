@@ -8,9 +8,8 @@
 // Створіть новий масив, де кожне значення це елемент вихідного масиву помножений на значення індексу відповідного елемента початкового масиву.
 // Виведіть новий масив на консоль.
 
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5]
 
-const multiplyIndexNumbers  = numbers.map((number, index ) => number * index);
+const multiplyIndexNumbers = numbers.map((number, index) => number * index)
 
-console.log (multiplyIndexNumbers);
-
+console.log(multiplyIndexNumbers)

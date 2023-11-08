@@ -8,43 +8,26 @@
 // Створіть блок catch в якому виведіть повідомлення про помилку в консоль.
 // Використовуючи блок finally, завершіть функцію, виведіть повідомлення "Робота завершена" в консоль, навіть якщо помилка виникла або не виникла.
 
-
-function divide(numerator, denominator) {
-   
-    if (typeof numerator !== 'number') {
-        throw new Error('Помилка: numerator має бути числом.');
-      }
-    if ( typeof denominator !== 'number'){
-        throw new Error('Помилка: denominator має бути числом.');
-      }
-    if (denominator === 0) {
-        throw new Error('Помилка: denominator не може дорівнювати 0.');
-      }
-      const result = numerator / denominator;
-      return result;
-    
+function divide (numerator, denominator) {
+  if (typeof numerator !== 'number') {
+    throw new Error('Помилка: numerator має бути числом.')
   }
+  if (typeof denominator !== 'number') {
+    throw new Error('Помилка: denominator має бути числом.')
+  }
+  if (denominator === 0) {
+    throw new Error('Помилка: denominator не може дорівнювати 0.')
+  }
+  const result = numerator / denominator
+  return result
+}
 
 try {
-    console.log(divide(10, 2));
-    console.log(divide(5, 0)); 
-    console.log(divide('не число', 3));
-    
+  console.log(divide(10, 2))
+  console.log(divide(5, 0))
+  console.log(divide('не число', 3))
 } catch (error) {
-      console.error(error.message);
-      } finally {
-      console.log('Робота завершена');
-    }
-
-  
- 
-
-
-
-
-
-
-  
-  
-  
-  
+  console.error(error.message)
+} finally {
+  console.log('Робота завершена')
+}

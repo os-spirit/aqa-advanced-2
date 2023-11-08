@@ -6,12 +6,12 @@
 // Виведіть в консоль назву та автора книги з об'єкта book.
 
 const book = {
-    title: "Сліди на дорозі",
-    author: "Валерій Маркус",
-    year: 2016,
+  title: 'Сліди на дорозі',
+  author: 'Валерій Маркус',
+  year: 2016
 }
 
-console.log(book.title);
-console.log(book.author);
+console.log(book.title)
+console.log(book.author)
 
 // console.log(`${book.title} ${book.author}`);

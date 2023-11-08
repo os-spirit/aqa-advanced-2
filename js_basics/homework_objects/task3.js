@@ -7,11 +7,11 @@
 // Виведіть оновлений об'єкт car в консоль.
 
 const car = {
-    brand: "Toyota",
-    model: "RAV 4",
-    year: 2001
+  brand: 'Toyota',
+  model: 'RAV 4',
+  year: 2001
 }
 
-car.year = 2010;
+car.year = 2010
 
-console.log(car);
+console.log(car)

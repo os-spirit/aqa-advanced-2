@@ -8,11 +8,10 @@
 // Створіть новий масив, який містить всі елементи з обох вихідних масивів.
 // Виведіть отриманий об'єднаний масив на консоль.
 
+const firstArray = [1, 2, 3, 4, 5]
 
-const firstArray = [1, 2, 3, 4, 5];
+const secondArray = [6, 7, 8, 9, 10]
 
-const secondArray = [6, 7, 8, 9, 10];
+const combinedArray = firstArray.concat(secondArray)
 
-const combinedArray = firstArray.concat(secondArray);
-
-console.log(combinedArray);
+console.log(combinedArray)

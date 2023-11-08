@@ -2,76 +2,64 @@
 
 // Геттери та сеттери: Додайте геттери та сеттери для всіх властивостей класу Book та EBook. В сеттерах необхідно додати валідацію для переданих значень. Використовуйте їх для зміни та отримання значень властивостей.
 
-
 class Book {
-    constructor (title, author, year){
+  constructor (title, author, year) {
+    this._title = title
+    this._author = author
+    this._year = year
+  }
 
-        this._title = title
-        this._author = author
-        this._year = year
+  printInfo () {
+    console.log(`${this._title} ${this._author} ${this._year}`)
+  }
 
+  get title () {
+    return this._title
+  }
+
+  get author () {
+    return this._author
+  }
+
+  get year () {
+    return this._year
+  }
+
+  set title (newTitle) {
+    if (typeof newTitle === 'string') {
+      this._title = newTitle
+    } else {
+      console.log('Tittle must be a string!')
     }
+  }
 
-    printInfo (){
-        console.log(`${this._title} ${this._author} ${this._year}`)
+  set author (newAuthor) {
+    if (typeof newAuthor === 'string') {
+      this._author = newAuthor
+    } else {
+      console.log('Author must be a string!')
     }
-    
-    get title(){
-        
-        return this._title
-    
-    }
+  }
 
-    get author(){
-        
-        return this._author
-    
+  set year (newYear) {
+    if (typeof newYear === 'number') {
+      this._year = newYear
+    } else {
+      console.log('Year must be number!')
     }
+  }
 
-    get year(){
-        
-        return this._year
-    
-    }
+  static findOldestBook (booksList) {
+    let oldestBook = booksList[0]
 
-    set title(newTitle) {
-        if (typeof newTitle === 'string') {
-          this._title = newTitle;
-        } else {
-          console.log("Tittle must be a string!");
-        }
+    for (const book of booksList) {
+      if (book.year < oldestBook.year) {
+        oldestBook = book
       }
-
-      set author(newAuthor) {
-        if (typeof newAuthor === 'string') {
-          this._author = newAuthor;
-        } else {
-          console.log("Author must be a string!");
-        }
-      }
-
-      set year(newYear) {
-        if (typeof newYear === 'number') {
-          this._year = newYear;
-        } else {
-          console.log("Year must be number!");
-        }
-      }
-
-     static findOldestBook(booksList){
-
-        let oldestBook = booksList[0];
-
-        for (const book of booksList) {
-          if (book.year < oldestBook.year) {
-            oldestBook = book; 
-          }
-        }
-      
-        return oldestBook;
     }
+
+    return oldestBook
+  }
 }
 
-export default Book;
-
-
+export default Book
