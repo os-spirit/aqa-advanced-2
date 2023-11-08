@@ -8,15 +8,14 @@
 
 const student = {
 
-};
+}
 
-student.firstName = "Joe";
+student.firstName = 'Joe'
 
-student.lastName = "Bibop";
+student.lastName = 'Bibop'
 
-student.age = 18;
+student.age = 18
 
-student.courses = ["Математика", "Історія", "Програмування"];
+student.courses = ['Математика', 'Історія', 'Програмування']
 
-console.log(student);
-
+console.log(student)

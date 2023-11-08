@@ -5,30 +5,24 @@
 // Викличте вашу функцію з аргументами (наприклад 5 і 10) і виведіть результат (площу прямокутника) в консоль.
 // Реалізуйте функцію трьома способами (function declaration, function expression, arrow function)
 
-
 // Declaration
-function calculateRectangleArea(width, height) {
-
-    const rectangleAreaResult = width * height;
-    return rectangleAreaResult;
-    
+function calculateRectangleArea (width, height) {
+  const rectangleAreaResult = width * height
+  return rectangleAreaResult
 }
 
-console.log(calculateRectangleArea(5, 10));
+console.log(calculateRectangleArea(5, 10))
 
 // Expression
 
 const calculateRectangleAreaExpress = function (width, height) {
-    return width * height;
-    
+  return width * height
 }
 
-console.log(calculateRectangleAreaExpress(5, 10));
+console.log(calculateRectangleAreaExpress(5, 10))
 
-//Arrow
+// Arrow
 
-const calculateRectangleAreaArrow = (width, height) => width * height;
+const calculateRectangleAreaArrow = (width, height) => width * height
 
-console.log(calculateRectangleAreaArrow(5,10));
-
- 
+console.log(calculateRectangleAreaArrow(5, 10))

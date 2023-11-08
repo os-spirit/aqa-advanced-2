@@ -7,12 +7,12 @@
 // Відсортуйте створений масив (від меншого до більшого)
 // Виведіть обидва масиви в консоль
 
-const numbersList = [1,10,14,2,4,5,43,34];
+const numbersList = [1, 10, 14, 2, 4, 5, 43, 34]
 
-const numbersListSortedCopy = numbersList.map((elements)=> elements);
+const numbersListSortedCopy = numbersList.map((elements) => elements)
 
-numbersListSortedCopy.sort((a, b) => a - b);
+numbersListSortedCopy.sort((a, b) => a - b)
 
-console.log(numbersList);
+console.log(numbersList)
 
-console.log(numbersListSortedCopy);
+console.log(numbersListSortedCopy)

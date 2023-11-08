@@ -6,9 +6,8 @@
 
 // Виведіть усі змінні в консоль
 
+const isAdult = 18
 
-const isAdult = 18;
+const checkAge = isAdult >= 18
 
-const checkAge = isAdult >= 18;
-
-console.log(isAdult, checkAge);
+console.log(isAdult, checkAge)
