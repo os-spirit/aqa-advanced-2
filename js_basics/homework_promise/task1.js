@@ -4,9 +4,7 @@
 
 // Функція повинна виводити переданий текст через передану кількість мілісекунд.
 
-async function outputInformationByDelay(text, delayMs){
-
-    setTimeout(()=> console.log(text), delayMs);
-  
+async function outputInformationByDelay (text, delayMs) {
+  setTimeout(() => console.log(text), delayMs)
 }
-outputInformationByDelay("Some text that you will see after Delay!", 5_000);
+outputInformationByDelay('Some text that you will see after Delay!', 5_000)
